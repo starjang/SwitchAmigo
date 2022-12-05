@@ -16,6 +16,7 @@
 		1B1F5105293E24C4002C1DAA /* SettingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B1F5104293E24C4002C1DAA /* SettingView.swift */; };
 		1B6B8362293E354C004A0246 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 1B6B8364293E354C004A0246 /* InfoPlist.strings */; };
 		1BFC64B5293E28D80016EDD4 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 1BFC64B7293E28D80016EDD4 /* Localizable.strings */; };
+		23DDCEDDE922CF25C56B0EF1 /* Pods_SwichAmigo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DB8FE69B1978E044F0CB5F3D /* Pods_SwichAmigo.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -37,6 +38,9 @@
 		1BFC64B9293E28DE0016EDD4 /* zh-Hant */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hant"; path = "zh-Hant.lproj/Localizable.strings"; sourceTree = "<group>"; };
 		1BFC64BA293E28DF0016EDD4 /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/Localizable.strings; sourceTree = "<group>"; };
 		1BFC64BB293E28E00016EDD4 /* ko */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ko; path = ko.lproj/Localizable.strings; sourceTree = "<group>"; };
+		462536F174E226793B2F9CD4 /* Pods-SwichAmigo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwichAmigo.debug.xcconfig"; path = "Target Support Files/Pods-SwichAmigo/Pods-SwichAmigo.debug.xcconfig"; sourceTree = "<group>"; };
+		7AB8540D508362F565F70CB9 /* Pods-SwichAmigo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwichAmigo.release.xcconfig"; path = "Target Support Files/Pods-SwichAmigo/Pods-SwichAmigo.release.xcconfig"; sourceTree = "<group>"; };
+		DB8FE69B1978E044F0CB5F3D /* Pods_SwichAmigo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SwichAmigo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -44,6 +48,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				23DDCEDDE922CF25C56B0EF1 /* Pods_SwichAmigo.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -55,6 +60,8 @@
 			children = (
 				1B1F50F1293E19A8002C1DAA /* SwichAmigo */,
 				1B1F50F0293E19A8002C1DAA /* Products */,
+				CDAA187F66CD6F350DE909B4 /* Pods */,
+				26AEFD85C7A4A24198DA9550 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -98,6 +105,24 @@
 			path = Resources;
 			sourceTree = "<group>";
 		};
+		26AEFD85C7A4A24198DA9550 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				DB8FE69B1978E044F0CB5F3D /* Pods_SwichAmigo.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		CDAA187F66CD6F350DE909B4 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				462536F174E226793B2F9CD4 /* Pods-SwichAmigo.debug.xcconfig */,
+				7AB8540D508362F565F70CB9 /* Pods-SwichAmigo.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -105,9 +130,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 1B1F50FD293E19A9002C1DAA /* Build configuration list for PBXNativeTarget "SwichAmigo" */;
 			buildPhases = (
+				BFD8C555A149753C9BA893FA /* [CP] Check Pods Manifest.lock */,
 				1B1F50EB293E19A8002C1DAA /* Sources */,
 				1B1F50EC293E19A8002C1DAA /* Frameworks */,
 				1B1F50ED293E19A8002C1DAA /* Resources */,
+				4E17619A6A746D417EA0AD3E /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -168,6 +195,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		4E17619A6A746D417EA0AD3E /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SwichAmigo/Pods-SwichAmigo-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SwichAmigo/Pods-SwichAmigo-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-SwichAmigo/Pods-SwichAmigo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BFD8C555A149753C9BA893FA /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SwichAmigo-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		1B1F50EB293E19A8002C1DAA /* Sources */ = {
@@ -328,6 +397,7 @@
 		};
 		1B1F50FE293E19A9002C1DAA /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 462536F174E226793B2F9CD4 /* Pods-SwichAmigo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -361,6 +431,7 @@
 		};
 		1B1F50FF293E19A9002C1DAA /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7AB8540D508362F565F70CB9 /* Pods-SwichAmigo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;

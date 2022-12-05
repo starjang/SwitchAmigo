@@ -1,0 +1,13 @@
+# Uncomment the next line to define a global platform for your project
+# platform :ios, '9.0'
+
+target 'SwichAmigo' do
+  # Comment the next line if you don't want to use dynamic frameworks
+  use_frameworks!
+
+  # Pods for SwichAmigo
+  # A number of preset loading indicators created with SwiftUI 活动指示器
+  https://github.com/exyte/ActivityIndicatorView
+	pod 'ActivityIndicatorView'
+
+end
