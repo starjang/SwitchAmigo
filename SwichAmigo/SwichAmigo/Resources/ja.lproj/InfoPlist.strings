@@ -1,0 +1,9 @@
+/* 
+  InfoPlist.strings
+  SwichAmigo
+
+  Created by starjang on 2022/12/5.
+  
+*/
+// 应用名
+CFBundleDisplayName = "Switch收藏";
