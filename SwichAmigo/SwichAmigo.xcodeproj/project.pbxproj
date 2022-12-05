@@ -76,6 +76,7 @@
 		1B1F50F1293E19A8002C1DAA /* SwichAmigo */ = {
 			isa = PBXGroup;
 			children = (
+				1BBE98BA293E3B8000512582 /* Model */,
 				1BFC64B1293E28860016EDD4 /* Resources */,
 				1B1F50F2293E19A8002C1DAA /* SwichAmigoApp.swift */,
 				1B1F50F4293E19A8002C1DAA /* HomeView.swift */,
@@ -94,6 +95,13 @@
 				1B1F50F9293E19A9002C1DAA /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		1BBE98BA293E3B8000512582 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 		1BFC64B1293E28860016EDD4 /* Resources */ = {
@@ -119,7 +127,6 @@
 				462536F174E226793B2F9CD4 /* Pods-SwichAmigo.debug.xcconfig */,
 				7AB8540D508362F565F70CB9 /* Pods-SwichAmigo.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
